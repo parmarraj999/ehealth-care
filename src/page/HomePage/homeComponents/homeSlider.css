@@ -1,0 +1,60 @@
+.carousel-image{
+    position: absolute;
+    max-width: 100%;
+}
+.carousel-container{
+    margin:0 auto;
+    padding: 0;
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #151515;
+    overflow: hidden;
+    position: relative;
+    border-radius: 2rem;
+}
+.next, .prev{
+    position: absolute;
+    top:50%;
+    width:50px;
+    height:50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,.5);
+    border-radius: 10px;
+    font-size: 60px;
+    cursor: pointer;
+    user-select: none;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.next{
+    right:70px;
+}
+.prev{
+    left:70px;
+    transform: translateY(-50%) scaleX(-1);
+
+}
+
+.dots{
+    display:flex;
+    margin-top: 500px;
+    z-index:2;
+}
+.dot{
+    width:14px;
+    height: 14px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background: gray;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dot.active{
+    background: white;
+}

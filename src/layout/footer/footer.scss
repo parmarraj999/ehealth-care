@@ -1,0 +1,115 @@
+.footer_container{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    background: rgb(241, 241, 241);
+    padding-top: 6rem;
+    gap: 1rem;
+    .footer_logo{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 200px;
+        }
+    }
+    .newsletter_container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+        h2{
+            font-size: 20px;
+            font-weight: 500;
+            color: #00000080;
+        }
+        .newsletter_input{
+            width: 40%;
+            height: 50px;
+            background: rgb(228, 228, 228);
+            border-radius: 10px;
+            display: flex;
+            overflow: hidden;
+            input{
+                width: 100%;
+                height: 100%;
+                background: transparent;
+                border: none;
+                padding: 0 1rem;
+                font-size: 16px;
+            }
+            button{
+                background: rgb(0, 17, 165);
+                border: none;
+                outline: none;
+                font-size: 16px;
+                color: white;
+                font-weight: 600;
+                padding: 0 1.5rem;
+            }
+        }
+    }
+    .footer_navigation{
+        width: 55%;
+        // border: 1px solid red;
+        display: flex;
+        justify-content: space-between; 
+        gap: 2rem;  
+        margin-top: 2rem;
+        .footer_list_container{
+            display: flex;
+            flex-direction: column;
+            gap: .6rem;
+            div{
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+            }
+            h2{
+                font-size: 20px;
+            }
+            p{
+                font-size: 16px;
+                color: grey;
+            }
+        }
+    }
+    .copyright_section{
+        margin-top: 2rem;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h1{
+            font-size: 18px;
+            color: rgb(75, 75, 75);
+            font-weight: 500;
+        }
+    }
+}
+
+@media screen and (max-width:765px) {
+    .footer_container{
+        .newsletter_container{
+            .newsletter_input{
+                width: 95%;
+            }
+        }
+        .footer_navigation{
+            width: 90%;
+            flex-wrap: wrap;
+            .footer_list_container{
+                width: 45%;
+            }
+        }
+        .copyright_section{
+            margin-top: 1rem;
+        }
+    }
+}
