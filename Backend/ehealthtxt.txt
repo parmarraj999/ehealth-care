@@ -1,4 +1,3 @@
-
 EHealth-Care
 . Front-end devoloped using react
 
@@ -60,7 +59,7 @@ EHealth-Care
         
         Use code [with caution.](https://www.notion.so/faq#coding)
         
-3. **API Routes:**
+3. **API Routes:**  
     - **User Routes:**
         - User registration and login
         - Book appointments
